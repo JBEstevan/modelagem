@@ -1,4 +1,4 @@
-const model = require("../models/barbearia.js")
+const model = require("../models/franquia.js")
 
 const db = []
 

@@ -1,10 +1,10 @@
-const model = require("../models/barbearia.js")
+const model = require("../models/barbeiro.js")
 
 const db = []
 
 const index = () => db
 
-const show = id => db.find(el => el.id == id)
+const show = id => db.find(el => el.id ==  id)
 
 const store = (body) => {
     const novo = model(body)
