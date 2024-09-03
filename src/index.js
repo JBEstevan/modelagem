@@ -12,7 +12,7 @@ const port = 5600
 
 app.use(express.json())
 //MIDDLEWARE GLOBAL
-//app.use(cep_endereco)
+app.use(cep_endereco)
 
 //atendimento
 
@@ -45,7 +45,7 @@ app.get("/barbearia"), (req, res) => {
     res.json(barbearia_controller.index())
 }
 
-app.get("/barberia/:id"), (req, res) => {
+app.get("/barbearia/:id"), (req, res) => {
     res.json(barbearia_controller.show(req.params.id))
 }
 
